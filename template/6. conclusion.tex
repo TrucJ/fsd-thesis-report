@@ -1,0 +1,6 @@
+\section{Conclusion}
+In this paper, we propose Large Margin Cotangent Loss for similarity learning. We examine why cotangent is more effective than the cosine function in small angles (near to 0) and large angles (near to $\pi$) situations. We implement the loss based on ArcFace, which is evaluated on several datasets as well as competitions. In face datasets, we tested the ResNet50 model on the LFW dataset along with the EfficientNetV2S model on the CelebA validation dataset. Furthermore, we experimented with the speaker verification problem from VLSP2021. Lastly, we examined LMCot on Google Landmark competitions: Google Landmark Retrieval and Google Landmark Recognition. By experimentally replacing the cosine function with the cotangent function in ArcFace, LMCot is proved to advance the conventional ArcFace in some measurements.
+
+Nevertheless, applying the cotangent function could cause a small increase in computation complexity. In addition, we need to set epsilon $\epsilon$ to ensure the value of the cotangent value does not exceed the limit. In the future, we will find ways to improve those limitations of LMCot.
+
+% Or use another function that better reflects the distribution of angles $theta$ Which makes the training process faster and better.

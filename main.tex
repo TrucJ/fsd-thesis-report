@@ -1,0 +1,67 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+
+\usepackage{graphicx}
+\usepackage[caption=false]{subfig}
+\graphicspath{ {images/} }
+\usepackage{float}
+\usepackage[flushleft]{threeparttable}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{lipsum,booktabs,siunitx}
+\usepackage{svg}
+
+\makeatletter
+\renewcommand\footnoterule{%
+  \kern-3\p@
+  \hrule\@width3.5cm
+  \kern2.6\p@}
+\makeatother
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% Tài liệu tham khảo
+\usepackage[
+    backend=biber,
+    style=ieee,
+    citestyle=numeric,
+    sortcites,
+    natbib=true,
+	sorting=none]{biblatex}
+\usepackage[unicode,hidelinks]{hyperref} % Bookmark tiếng Việt
+\addbibresource{references.bib}
+
+\begin{document}
+
+\title{Large Margin Cotangent Loss for Deep Similarity Learning\\
+}
+
+\author{\IEEEauthorblockN{Anh-Kiet Duong\textsuperscript{1,2\textsuperscript{$\dagger$}}, Hoang-Lan Nguyen\textsuperscript{1,2\textsuperscript{$\dagger$}}, Toan-Thinh Truong\textsuperscript{1,2\textsuperscript{$\ast$}}}
+\IEEEauthorblockA{\textsuperscript{1}University of Science, Ho Chi Minh City, Vietnam \\
+\textsuperscript{2}Vietnam National University, Ho Chi Minh City, Vietnam \\
+\texttt{\{18120046,18120051\}@student.hcmus.edu.vn}, \texttt{\href{mailto:ttthinh    @fit.hcmus.edu.vn}{ttthinh@fit.hcmus.edu.vn}}
+\thanks{\textsuperscript{$\dagger$}These authors share the equal contribution}}
+\thanks{\textsuperscript{$\ast$}Corresponding author. Email: \texttt{\href{mailto:ttthinh    @fit.hcmus.edu.vn}{ttthinh@fit.hcmus.edu.vn}}}
+}
+
+\maketitle
+
+\input{template/1. abstract}
+\input{template/2. introduction}
+\input{template/3. related work}
+\input{template/4. propose approach}
+\input{template/5. experiments}
+\input{template/6. conclusion}
+
+\section*{Acknowledgment}
+
+This study was funded by Vietnam National University, Ho Chi Minh City (VNU-HCM) under grant number C2021-18-21.
+
+
+\printbibliography[title={References}]
+\end{document}
